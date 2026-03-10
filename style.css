@@ -1,0 +1,221 @@
+#parag1{
+    color:darkorange;
+}
+#parag2{
+    background-color: burlywood;
+}
+#pre1{
+    color:rgb(255, 0, 0,0.5);
+}
+/*#pre1{
+    color: #ffff00 ;
+}*/
+#box{
+    background-color:blue ;
+}
+.heading{
+    background-color: red;
+}
+#b1{
+    background-color: green;
+}
+.heading{
+    text-align:center;
+}
+.heading{
+    text-decoration:line-through;
+    width: 45rem;
+}
+.heading{
+ font-weight:700;
+}
+.heading{
+    font-style:italic;
+}
+.heading{
+    font-family: 'Times New Roman', Times, serif;
+}
+.heading{
+    line-height: 1.5;
+}
+.heading{
+    font-size: 30px;
+}
+.heading{
+    text-transform: full-width;
+}
+#h1{
+    text-transform: uppercase;
+    text-align: center;
+}
+#p1{
+    font-family: 'Times New Roman', Times, serif;
+    display: none;
+}
+#outer{
+    font-size: 20px;
+    border-width: 1px;
+    border-color: black;
+    border-style:solid;
+    padding: 5px;
+    margin: 1px;
+    height: 140px;
+}
+#inner{
+    font-size: 10px;
+    height: 5px;
+    width:0.5;
+}
+#dv1{
+    width: 100px;
+    height: 100px;
+    border: 2px solid black;
+    background-color: green;
+    overflow: scroll;
+    display: block;
+}
+#d01{
+    width:  750px;
+    height: 40px;
+    background-color:khaki;
+    align-items: center;
+    align-content: center;
+    display: flex;
+    justify-content: space-between;
+}
+#d01 a{
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+   justify-content: space-between;
+   margin: 30px;
+}
+img{
+    display:block;
+    visibility:visible;
+    position:sticky; 
+    z-index: 1;
+    background-image: url("./images/DevOps\ Background\ Image.jpg");
+    background-size: cover;
+}
+#container{
+    width: 700px;
+    height: 250px;
+    border: 2px solid black;
+    display: flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    background-color: lightgray;
+    flex-direction: row;
+    align-items: center;
+    align-content: center;
+}
+#boxxx1{
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    text-align: center;
+    border: 4px solid black;
+}
+#boxxx2{
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+    text-align: center;
+     border: 4px solid black;
+     align-self: flex-end;
+     flex-grow: 1;
+}
+#boxxx3{
+    width: 100px;
+    height: 100px;
+    background-color: green;
+    text-align: center;
+     border: 4px solid black;
+    flex-shrink: 1;
+}
+#boxxx4{
+    width: 100px;
+    height: 100px;
+    background-color: yellow;
+    text-align: center;
+     border: 4px solid black;
+}
+#boxxx5{
+    width: 100px;
+    height: 100px;
+    background-color: purple;
+    text-align: center;
+     border: 4px solid black;
+}
+#dvv001{
+    width: 100px;
+    height: 100px;
+    background-color: lightblue;
+  position:relative;
+    /*transition-property:all;
+    transition-duration: 2s;
+    transition-timing-function:ease-in;
+    transition-delay: 1s;
+     transition: all 2s ease-in 1s;*/
+     animation-name: Animate;
+        animation-duration: 2s;
+        animation-timing-function: ease-in;
+        animation-delay: 2s;
+        animation-iteration-count: 5;
+            animation-direction: normal;
+ 
+}
+@keyframes Animate{
+    0%{left:0px;
+        background-color: lightblue;
+    }
+    50%{
+        background-color: orange;
+    }
+    100%{
+        right: 250px;
+        background-color: red;
+    }
+}
+/*#dvv001:hover{
+    background-color: red;
+    color: white;
+    font-size: 10px;
+    align-items:center;
+    transform: rotate(360deg);
+    transform: translateX(500px );
+    transform: skewY(5deg);
+}*/
+@media (width: 500px) {
+    #dvv001{
+        background-color:red;
+    }
+}
+@media (min-width: 500px) {
+    #dvv001{
+        background-color:red;
+    }
+}
+@media (min-width: 500px) and (max-width: 1000px) {
+    #dvv001{
+        background-color:red;
+    }
+}
+#loader{
+    width: 200px;
+    height: 200px;
+    border-radius: 50% ;
+    border: 20px solid lightgray;
+    border-top: 20px solid black;
+    animation: spin;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+    animation-delay: 1s;
+    animation-iteration-count: infinite;
+
+}
+@keyframes spin{
+    0%{transform: rotate(0deg);}
+    100%{transform: rotate(360deg);}
+}
